@@ -1,5 +1,6 @@
 import React from 'react'; 
 import articles from './article-content';
+import ArticlesList from '../components/ArticlesList';
 
 const ArticlePage = ({ match }) => {
     const name = match.params.name; 
@@ -13,7 +14,7 @@ const ArticlePage = ({ match }) => {
             {article.content.map((paragraph, key) => (
                 <p key={key}>{paragraph}</p>
             ))} 
-    
+            <ArticlesList articles={articles}/>
         </React.Fragment>
     )
 }
