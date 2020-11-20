@@ -1,5 +1,6 @@
 # dependencies 
 /node_modules 
+/learn-aws-backend/node_modules 
 
 # IDE - VSCode 
 .vscode/* 
